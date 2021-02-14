@@ -1,5 +1,7 @@
 # Yellowcake
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5ca89d36-d208-46e4-a773-686cbd57cb42/deploy-status)](https://app.netlify.com/sites/mekong/deploys)
+
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![dependencies](https://david-dm.org/jinksi/netlify-cms-react-starter.svg?style=flat-square)](https://david-dm.org/jinksi/gatsbro)
 
