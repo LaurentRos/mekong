@@ -3,6 +3,13 @@ backend:
   name: git-gateway
   branch: preprod # Branch to update (optional; defaults to master)
 
+i18n:
+  structure: single_file
+
+  locales: [en, jp]
+
+  default_locale: en
+
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
   name: uploadcare
@@ -15,10 +22,11 @@ media_library:
     previewStep: true
     clearable: true
 
-collections: # A list of collections the CMS should be able to edit
+collections:
   - name: 'pages'
     label: 'Page'
-    delete: false # Prevent users from deleting documents in this collection
+    i18n: true
+    delete: false
     editor:
       preview: true
     files:
@@ -243,6 +251,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: infoPages
     label: Info Page
+    i18n: true
     editor:
       preview: true
     folder: content/infoPages
@@ -281,6 +290,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: posts
     label: Post
+    i18n: true
     editor:
       preview: true
     folder: content/posts
@@ -336,6 +346,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: postCategories
     label: Post Category
+    i18n: true
     editor:
       preview: false
     folder: content/postCategories
